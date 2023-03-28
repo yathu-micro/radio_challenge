@@ -1,5 +1,5 @@
 {
-    "name": "challenge",
+    "name": "radio_challenge",
     "description": "",
     "dependencies": {
         "core": "*",
