@@ -12,6 +12,7 @@ input.onButtonPressed(Button.A, function () {
                 . . # . .
                 `)
         } else if (channel_no < decimal) {
+            basic.showNumber(decimal)
             basic.showLeds(`
                 . . . . .
                 . . . . .
@@ -20,6 +21,7 @@ input.onButtonPressed(Button.A, function () {
                 . . . . .
                 `)
         } else {
+            basic.showNumber(decimal)
             basic.showLeds(`
                 # # . # #
                 # # . # #
@@ -34,7 +36,6 @@ input.onButtonPressed(Button.A, function () {
 })
 input.onButtonPressed(Button.B, function () {
     decimal = 2 ** bits + decimal
-    basic.showNumber(channel_no)
     if (bits > 0) {
         bits = bits - 1
     } else {
@@ -48,6 +49,7 @@ input.onButtonPressed(Button.B, function () {
                 . . # . .
                 `)
         } else if (channel_no < decimal) {
+            basic.showNumber(decimal)
             basic.showLeds(`
                 . . . . .
                 . . . . .
@@ -56,6 +58,7 @@ input.onButtonPressed(Button.B, function () {
                 . . . . .
                 `)
         } else {
+            basic.showNumber(decimal)
             basic.showLeds(`
                 # # . # #
                 # # . # #
